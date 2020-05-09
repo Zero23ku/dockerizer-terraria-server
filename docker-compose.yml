@@ -1,0 +1,22 @@
+version: '3'
+services: 
+    tshock:
+        image: terrariaserver:test
+        environment: 
+            - PORT=7777
+            - WORLD=default.wld 
+            - AUTOCREATE=3
+            - MAXPLAYERS=16
+        ports:
+            - "9000:7777" #HOST:CONTAINER. CONTAINER PORT MUST MATCH PORT SETTED IN ENVIROMENT
+        volumes:
+            - ./worlds:/opt/Terraria/world
+            - ./config:/tshock/tshock
+            #Keep original files from /tshock/tshock folder
+            - /tshock/tshock/config.json
+            - /tshock/tshock/motd.txt
+            - /tshock/tshock/rules.txt
+            - /tshock/tshock/sscconfig.json
+            - /tshock/tshock/tshock.pid
+            - /tshock/tshock/tshock.sqlite
+            - /tshock/tshock/whitelist.txt
