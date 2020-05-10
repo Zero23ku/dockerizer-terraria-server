@@ -3,6 +3,9 @@ tShock is a dedicated server Software for Terraria.
 
 You can learn more about it [here](https://tshock.readme.io/docs)
 
+This image is based on Linux Alpine 3.9.6 using [tShock v4.3.26](https://github.com/Pryaxis/TShock/releases) for Terraria 1.3.5.3
+
+
 # How to run
 
 If you wanna try it, use the following command:
