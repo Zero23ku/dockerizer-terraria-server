@@ -1,7 +1,7 @@
 version: '3'
 services: 
     tshock:
-        image: terrariaserver:test
+        image: zero23ku/tshock-terraria:1.0
         environment: 
             - PORT=7777
             - WORLD=default.wld 
