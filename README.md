@@ -39,4 +39,4 @@ The following enviroment variables can be set through docker run command or sett
 
 tShock also have an Api Rest admins can use to do a number of things, it comes turn off by default, but you can activate it modifying the config.json file in the config folder. More info [here](https://tshock.readme.io/reference)
 
-If will need to expose the Api Rest port too, by default is the port 7878 but you also can modify it in the config.json file
+You will need to expose the Api Rest port too, by default is the port 7878 but you also can modify it in the config.json file
