@@ -11,7 +11,6 @@ RUN mkdir tshock
 WORKDIR /tshock
 RUN wget -O tshock.zip 'https://github.com/Pryaxis/TShock/releases/download/v4.3.26/tshock_4.3.26.zip'
 ADD start-server.sh start-server.sh
-#ENTRYPOINT mono TerrariaServer.exe -port ${PORT} -worldpath /opt/Terraria/world -world /opt/Terraria/world/${WORLD} -maxplayers ${MAXPLAYERS} -autocreate ${AUTOCREATE}
 ENTRYPOINT [ "sh","start-server.sh" ]
 
 

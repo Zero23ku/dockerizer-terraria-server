@@ -9,14 +9,8 @@ services:
             - MAXPLAYERS=16
         ports:
             - "9000:7777" #HOST:CONTAINER. CONTAINER PORT MUST MATCH PORT SETTED IN ENVIROMENT
+            - "7878:7878"
         volumes:
             - ./worlds:/opt/Terraria/world
             - ./config:/tshock/tshock
-            #Keep original files from /tshock/tshock folder
-            - /tshock/tshock/config.json
-            - /tshock/tshock/motd.txt
-            - /tshock/tshock/rules.txt
-            - /tshock/tshock/sscconfig.json
-            - /tshock/tshock/tshock.pid
-            - /tshock/tshock/tshock.sqlite
-            - /tshock/tshock/whitelist.txt
+            - ./plugins:/tshock/ServerPlugins
